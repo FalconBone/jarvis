@@ -1,15 +1,8 @@
 import { Injectable } from '@nestjs/common';
 import { Client, Events, GatewayIntentBits } from 'discord.js';
 
-const commands = [
-  {
-    name: 'ping',
-    description: 'Replies with Pong!',
-  },
-];
-
 @Injectable()
-export class DiscrodService {
+export class DiscordService {
   private client: Client
 
   constructor() {
